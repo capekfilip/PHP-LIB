@@ -12,7 +12,10 @@ use Foxentry\Response;
  */
 class BaseResource
 {
-    protected Request $request;
+    /**
+     * @var Request
+     */
+    protected $request;
 
     /**
      * Constructor to initialize the resource with a request object.

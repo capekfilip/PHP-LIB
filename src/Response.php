@@ -21,7 +21,7 @@ class Response
      *
      * @var array
      */
-    private array $headers = [];
+    private $headers = [];
 
     /**
      * Response constructor.

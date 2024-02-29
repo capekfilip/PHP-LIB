@@ -26,21 +26,21 @@ class Request
      *
      * @var string
      */
-    private string $baseUri = "https://api.foxentry.com/";
+    private $baseUri = "https://api.foxentry.com/";
 
     /**
      * The HTTP request method (e.g., "GET" or "POST").
      *
      * @var string
      */
-    private string $method = "POST";
+    private $method = "POST";
 
     /**
      * The HTTP headers for the API request.
      *
      * @var array
      */
-    private array $headers = [
+    private $headers = [
         "Foxentry-Include-Request-Details" => false,
         "Content-Type" => "application/json",
         "Accept" => "application/json"
@@ -51,56 +51,56 @@ class Request
      *
      * @var object
      */
-    private object $body;
+    private $body;
 
     /**
      * A custom ID for the request (optional).
      *
      * @var string|null
      */
-    private ?string $customId = null;
+    private $customId = null;
 
     /**
      * The query parameters for the API request.
      *
      * @var array
      */
-    private array $query;
+    private $query;
 
     /**
      * Additional options for the API request (optional).
      *
      * @var array|null
      */
-    private ?array $options = null;
+    private $options = null;
 
     /**
      * The API endpoint to send the request to.
      *
      * @var string
      */
-    private string $endpoint;
+    private $endpoint;
 
     /**
      * The HTTP client for making requests.
      *
      * @var HttpClient
      */
-    private HttpClient $httpClient;
+    private $httpClient;
 
     /**
      * The API key used for authentication.
      *
      * @var string
      */
-    private string $apiKey;
+    private $apiKey;
 
     /**
      * Information about the client making the request (optional).
      *
      * @var object|null
      */
-    private ?object $client = null;
+    private $client = null;
 
     public function __construct()
     {

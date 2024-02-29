@@ -20,42 +20,42 @@ class ApiClient
      *
      * @var Email
      */
-    public Email $email;
+    public $email;
 
     /**
      * Location resource.
      *
      * @var Location
      */
-    public Location $location;
+    public $location;
 
     /**
      * Company resource.
      *
      * @var Company
      */
-    public Company $company;
+    public $company;
 
     /**
      * Name resource.
      *
      * @var Name
      */
-    public Name $name;
+    public $name;
 
     /**
      * Phone resource.
      *
      * @var Phone
      */
-    public Phone $phone;
+    public $phone;
 
     /**
      * Request object for making API requests.
      *
      * @var Request
      */
-    private Request $request;
+    private $request;
 
     /**
      * ApiClient constructor.
